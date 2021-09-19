@@ -6,6 +6,12 @@ html,body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif, Arial;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
 }
 .container {
   width: auto;
