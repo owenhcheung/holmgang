@@ -4,12 +4,27 @@
     <meta charset="utf-8">
     <title>HOLMGANG</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <img class="frame" src="images/holmgang.png" />
+        <img class="frame" src="images/holmgang2.png" />
         <p>brought to you by <a href="https://twitter.com/catnaps16">cat naps @ lamia</a></p>
+
+        <input type="text" id="message" value="">
+        <button id="myButton" type="button">enter code</button>
+        
     </div>
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+
+            var message = document.getElementById("message").value;
+            if(message === "NICE") {
+                alert("fuck you");
+            }
+
+        }, false);
+    </script>
 </body>
 </html>
