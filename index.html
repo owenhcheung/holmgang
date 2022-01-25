@@ -21,7 +21,8 @@
 
             var message = document.getElementById("message").value;
             if(message === "NICE") {
-                alert("fuck you");
+                var audio = new Audio('boing.mp3');
+                audio.play();
             }
 
         }, false);
