@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HOLMGANG</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
@@ -14,6 +13,7 @@
 
         <input type="text" id="message" value="">
         <button id="myButton" type="button">enter code</button>
+        <p id="error">wrong code lol lmao</p>
         
     </div>
     <script>
@@ -21,8 +21,12 @@
 
             var message = document.getElementById("message").value;
             if(message === "NICE") {
+                document.getElementById("error").style.visibility = "hidden";
                 var audio = new Audio('boing.mp3');
                 audio.play();
+            }
+            else {
+                document.getElementById("error").style.visibility = "visible";
             }
 
         }, false);
